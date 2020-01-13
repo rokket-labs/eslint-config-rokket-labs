@@ -1,6 +1,8 @@
 # eslint-config-rokket-labs
 
-Official Rokket Labs ESLint configuration for all JS/TS projects. :rocket:
+![npm](https://img.shields.io/npm/v/eslint-config-rokket-labs)
+
+Official Rokket Labs ESLint configuration for all JS/TS projects. Includes Prettier configuration! :rocket:
 
 ## Usage
 
@@ -15,13 +17,63 @@ Or if you want to use yarn/npm directly
 
 ```
 // With yarn
-yarn add -D eslint eslint-plugin-import eslint-config-rokket-labs
+yarn add -D eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-config-rokket-labs
 
 // With npm
-npm install --save-dev eslint eslint-plugin-import eslint-config-rokket-labs
+npm install --save-dev eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-config-rokket-labs
 ```
 
-After installing, add `"extends": "rokket-labs"` to your `.eslintrc` file.
+After installing, add `"extends": ["rokket-labs"]` to your `.eslintrc` file.
+
+Then, create a new file called `prettier.config.js` on the root of your project, and add the following line:
+
+```
+module.exports = require('eslint-config-rokket-labs/prettier')
+```
+
+Be sure to install the Prettier and ESLint extensions for your code editor!
+
+### Use with Typescript
+
+If you want to use this with Typescript, install the following packages:
+
+```
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
+```
+
+Copy the following config to your `.eslintrc` file, changing the settings as you see fit:
+
+```
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "rokket-labs",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "settings": {
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
+```
 
 ### Use with React or React Native
 
