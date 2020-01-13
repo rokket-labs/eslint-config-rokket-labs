@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rokket-labs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Rokket Labs official ESLint rules for all JS/TS projects",
   "author": "Tomás Castro (tomas@rokketlabs.com)",
   "license": "MIT",
@@ -9,12 +9,6 @@
     "url": "https://github.com/rokket-labs/eslint-config-rokket-labs/issues"
   },
   "main": "index.js",
-  "files": [
-    "index.js",
-    "react.js",
-    "react-native.js",
-    "prettier.js"
-  ],
   "scripts": {
     "lint": "eslint ."
   },
