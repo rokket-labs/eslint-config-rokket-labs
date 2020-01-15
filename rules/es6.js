@@ -7,7 +7,7 @@ module.exports = {
     'no-var': 'error',
     'object-shorthand': 'error',
     'prefer-arrow-callback': 'error',
-    'prefer-const': 'error',
+    'prefer-const': ['error', { destructuring: 'all' }],
     'prefer-destructuring': ['error', { object: true, array: false }],
     'prefer-template': 'error',
     'rest-spread-spacing': ['error', 'never'],

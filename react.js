@@ -1,6 +1,6 @@
 module.exports = {
-  extends: ['./index', './rules/react'].map(require.resolve),
-  plugins: ['react'],
+  extends: ['./index', './rules/react', './rules/hooks'].map(require.resolve),
+  plugins: ['react', 'react-hooks'],
   env: {
     browser: true,
   },

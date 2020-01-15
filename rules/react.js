@@ -14,7 +14,7 @@ module.exports = {
     'react/no-unescaped-entities': 'error',
     'react/no-unknown-property': 'error',
     'react/no-unused-prop-types': 'error',
-    'react/prop-types': 'error',
+    'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'error',
   },
 }

@@ -1,6 +1,6 @@
 module.exports = {
   rules: {
-    'import/named': 'error',
+    'import/named': 'off',
     'import/default': 'error',
   },
 }
