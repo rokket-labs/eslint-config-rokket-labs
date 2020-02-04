@@ -10,7 +10,7 @@ Use the following command to install this configuration
 
 ```
 // With npx
-npx install-peerdeps --dev eslint-config-rokket-labs
+npx install-peerdeps --dev eslint-config-rokket-labs -Y
 ```
 
 Or if you want to use yarn/npm directly
@@ -27,7 +27,7 @@ After installing, add `"extends": ["rokket-labs"]` to your `.eslintrc` file.
 
 Then, create a new file called `prettier.config.js` on the root of your project, and add the following line:
 
-```
+```javascript
 module.exports = require('eslint-config-rokket-labs/prettier')
 ```
 
@@ -43,7 +43,7 @@ yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
 Copy the following config to your `.eslintrc` file, changing the settings as you see fit:
 
-```
+```json
 {
   "root": true,
   "env": {
