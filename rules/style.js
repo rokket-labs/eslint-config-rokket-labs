@@ -2,7 +2,7 @@ module.exports = {
   rules: {
     'brace-style': ['error', '1tbs'],
     'comma-dangle': ['error', 'only-multiline', { functions: 'never' }],
-    indent: ['error', 2],
+    indent: 'off',
     'no-lonely-if': 'error',
     'no-mixed-spaces-and-tabs': 'error',
     'no-trailing-spaces': 'error',
