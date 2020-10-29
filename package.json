@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rokket-labs",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Rokket Labs official ESLint rules for all JS/TS projects",
   "author": "Tomás Castro (tomas@rokketlabs.com)",
   "license": "MIT",
@@ -13,28 +13,28 @@
     "lint": "eslint ."
   },
   "peerDependencies": {
-    "eslint": "^7.4.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.3",
-    "eslint-plugin-react-hooks": "^4.0.5",
-    "eslint-plugin-react-native": "^3.8.1",
-    "prettier": "^2.0.5"
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react-native": "^3.10.0",
+    "prettier": "^2.1.2"
   },
   "dependencies": {
-    "eslint": "^7.4.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.3",
-    "eslint-plugin-react-hooks": "^4.0.5",
-    "eslint-plugin-react-native": "^3.8.1",
-    "prettier": "^2.0.5"
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react-native": "^3.10.0",
+    "prettier": "^2.1.2"
   },
   "devDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "eslintConfig": {
     "extends": "./index.js"
