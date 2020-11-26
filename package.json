@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rokket-labs",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "Rokket Labs official ESLint rules for all JS/TS projects",
   "author": "Tomás Castro (tomas@rokketlabs.com)",
   "license": "MIT",
@@ -20,6 +20,7 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-react-native": "^3.10.0",
+    "eslint-plugin-simple-import-sort": "^6.0.1",
     "prettier": "^2.1.2"
   },
   "dependencies": {
@@ -30,6 +31,7 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-react-native": "^3.10.0",
+    "eslint-plugin-simple-import-sort": "^6.0.1",
     "prettier": "^2.1.2"
   },
   "devDependencies": {

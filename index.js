@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['import'],
+  plugins: ['simple-import-sort', 'import'],
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
@@ -15,5 +15,6 @@ module.exports = {
     './rules/import',
     './rules/style',
     './rules/variables',
+    './rules/orderedImports'
   ].map(require.resolve),
 }
