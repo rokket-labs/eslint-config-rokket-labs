@@ -17,10 +17,10 @@ Or if you want to use yarn/npm directly
 
 ```
 // With yarn
-yarn add -D eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-config-rokket-labs
+yarn add -D eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-simple-import-sort eslint-config-rokket-labs
 
 // With npm
-npm install --save-dev eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-config-rokket-labs
+npm install --save-dev eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-simple-import-sort eslint-config-rokket-labs
 ```
 
 After installing, add `"extends": ["rokket-labs"]` to your `.eslintrc` file.
