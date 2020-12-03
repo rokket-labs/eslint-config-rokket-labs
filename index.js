@@ -1,7 +1,7 @@
 module.exports = {
-  plugins: ['simple-import-sort', 'import'],
+  plugins: ['import', 'simple-import-sort'],
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
     sourceType: 'module',
   },
   env: {
@@ -15,6 +15,6 @@ module.exports = {
     './rules/import',
     './rules/style',
     './rules/variables',
-    './rules/orderedImports'
+    './rules/orderedImports',
   ].map(require.resolve),
 }

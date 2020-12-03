@@ -17,10 +17,10 @@ Or if you want to use yarn/npm directly
 
 ```
 // With yarn
-yarn add -D eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-simple-import-sort eslint-config-rokket-labs
+yarn add -D eslint prettier prettier-eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-simple-import-sort eslint-config-rokket-labs
 
 // With npm
-npm install --save-dev eslint prettier eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-simple-import-sort eslint-config-rokket-labs
+npm install --save-dev eslint prettier prettier-eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-simple-import-sort eslint-config-rokket-labs
 ```
 
 After installing, add `"extends": ["rokket-labs"]` to your `.eslintrc` file.
@@ -31,7 +31,15 @@ Then, create a new file called `prettier.config.js` on the root of your project,
 module.exports = require('eslint-config-rokket-labs/prettier')
 ```
 
-Be sure to install the Prettier and ESLint extensions for your code editor!
+### Use with VSCode
+
+Search and install the following extension: `rvest.vs-code-prettier-eslint` and add it as a default formatter on VSCode settings (with `Editor: Default Formatter`).
+
+![](images/vscode-extension.png)
+
+![](images/vscode-example.png)
+
+Also, make sure `Editor: Format On Save` is enabled so you can take full advantage of our configuration.
 
 ### Use with Typescript
 
