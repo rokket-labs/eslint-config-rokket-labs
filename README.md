@@ -61,6 +61,7 @@ Copy the following config to your `.eslintrc` file, changing the settings as you
   "extends": [
     "rokket-labs",
     "plugin:@typescript-eslint/recommended",
+    "plugin:security-node/recommended",
     "prettier/@typescript-eslint"
   ],
   "parser": "@typescript-eslint/parser",
