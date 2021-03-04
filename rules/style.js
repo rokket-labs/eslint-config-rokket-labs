@@ -17,5 +17,7 @@ module.exports = {
     ],
     'space-in-parens': ['error', 'never'],
     'spaced-comment': ['error', 'always'],
+    'eol-last': ['error', 'always'], // Required by Git
+    'padding-line-between-statements': 'warn', // Improves readability
   },
 }
