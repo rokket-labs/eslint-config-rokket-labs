@@ -18,7 +18,10 @@ module.exports = {
     'space-in-parens': ['error', 'never'],
     'spaced-comment': ['error', 'always'],
     'eol-last': ['error', 'always'], // Required by Git
-    // Improves readability
+    // The following improves readability
+    'max-lines': ['warn', 300],
+    'max-lines-per-function': ['warn', 50],
+    'max-params': ['warn', 3], // Enforce destructuring
     'padding-line-between-statements': [
       'warn',
       {
