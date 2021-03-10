@@ -49,7 +49,7 @@ If you want to use this with Typescript, install the following packages:
 yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
-Copy the following config to your `.eslintrc` file, changing the settings as you see fit:
+Copy the following config to your `.eslintrc.json` file, changing the settings as you see fit:
 
 ```json
 {
@@ -59,17 +59,20 @@ Copy the following config to your `.eslintrc` file, changing the settings as you
     "jest": true
   },
   "extends": [
-    "rokket-labs",
+    "rokket-labs", // Change to rokket-labs/react or rokket-labs/react-native if using on front end
     "plugin:@typescript-eslint/recommended",
-    "plugin:security-node/recommended",
-    "prettier/@typescript-eslint"
+    "plugin:security-node/recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "parserOptions": {
+  "parserOptions": { 
     "project": "./tsconfig.json",
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint"],
+  "rules": {
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+  },
   "settings": {
     "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
     "import/parsers": {
@@ -88,7 +91,7 @@ Copy the following config to your `.eslintrc` file, changing the settings as you
 
 By default, the `rokket-labs` ESLint configuration works with Node and plain JS projects.
 
-If you want to use it for React projects, add `"extends": "rokket-labs/react"` or `"extends": "rokket-labs/react-native"` (for React Native projects) to your `.eslintrc` file.
+If you want to use it for React projects, add `"extends": "rokket-labs/react"` or `"extends": "rokket-labs/react-native"` (for React Native projects) to your `.eslintrc.json` file.
 
 ## Contributing
 
