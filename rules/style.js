@@ -17,5 +17,40 @@ module.exports = {
     ],
     'space-in-parens': ['error', 'never'],
     'spaced-comment': ['error', 'always'],
+    'eol-last': ['error', 'always'], // Required by Git
+    // The following improves readability
+    'max-lines': ['warn', 300],
+    'max-lines-per-function': ['warn', 50],
+    'max-params': ['warn', 3], // Enforce destructuring
+    'padding-line-between-statements': [
+      'warn',
+      {
+        blankLine: 'always',
+        prev: '*',
+        next: [
+          'do',
+          'if',
+          'for',
+          'let',
+          'try',
+          'iife',
+          'const',
+          'class',
+          'block',
+          'throw',
+          'while',
+          'return',
+          'switch',
+          'export',
+          'block-like',
+        ],
+      },
+      { blankLine: 'always', prev: ['const', 'let', 'function'], next: '*' },
+      {
+        blankLine: 'any',
+        prev: ['const', 'let'],
+        next: ['const', 'let'],
+      },
+    ],
   },
 }
