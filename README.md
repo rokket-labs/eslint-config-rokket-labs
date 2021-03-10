@@ -23,7 +23,7 @@ yarn add -D eslint prettier prettier-eslint eslint-config-prettier eslint-plugin
 npm install --save-dev eslint prettier prettier-eslint eslint-config-prettier eslint-plugin-import eslint-plugin-prettier eslint-plugin-simple-import-sort eslint-config-rokket-labs
 ```
 
-After installing, add `"extends": ["rokket-labs"]` to your `.eslintrc` file.
+After installing, add `"extends": ["rokket-labs"]` to your `.eslintrc.json` file.
 
 Then, create a new file called `prettier.config.js` on the root of your project, and add the following line:
 
@@ -40,6 +40,12 @@ Search and install the following extension: `rvest.vs-code-prettier-eslint` and 
 ![](images/vscode-example.png)
 
 Also, make sure `Editor: Format On Save` is enabled so you can take full advantage of our configuration.
+
+### Use with React or React Native
+
+By default, the `rokket-labs` ESLint configuration works with Node and plain JS projects.
+
+If you want to use it for React projects, add `"extends": "rokket-labs/react"` or `"extends": "rokket-labs/react-native"` (for React Native projects) to your `.eslintrc.json` file.
 
 ### Use with Typescript
 
@@ -86,12 +92,6 @@ Copy the following config to your `.eslintrc.json` file, changing the settings a
   }
 }
 ```
-
-### Use with React or React Native
-
-By default, the `rokket-labs` ESLint configuration works with Node and plain JS projects.
-
-If you want to use it for React projects, add `"extends": "rokket-labs/react"` or `"extends": "rokket-labs/react-native"` (for React Native projects) to your `.eslintrc.json` file.
 
 ## Contributing
 
