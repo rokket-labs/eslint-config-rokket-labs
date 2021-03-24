@@ -12,7 +12,9 @@ module.exports = {
           // Packages. `react` related packages come first.
           ['^react', '^@?\\w'],
           // Internal packages.
-          ['^(@|@company|@ui|@src|components|lib|utils|config|vendored-lib|src)(/.*|$)'],
+          [
+            '^(@|@company|@ui|@src|components|lib|pages|layouts|tests|utils|config|vendored-lib|src)(/.*|$)',
+          ],
           // Side effect imports.
           ['^\\u0000'],
           // Parent imports. Put `..` last.
@@ -20,12 +22,12 @@ module.exports = {
           // Other relative imports. Put same-folder imports and `.` last.
           ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
           // Style imports.
-          ['^.+\\.s?css$']
-        ]
-      }
+          ['^.+\\.s?css$'],
+        ],
+      },
     ],
     'simple-import-sort/exports': 'error',
     'sort-imports': 'off',
-    'import/order': 'off'
-  }
+    'import/order': 'off',
+  },
 }
