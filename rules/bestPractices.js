@@ -11,5 +11,6 @@ module.exports = {
     'no-fallthrough': 'error',
     'no-octal': 'error',
     'no-redeclare': 'error',
+    'no-console': ['error', { allow: ['warn', 'error'] }],
   },
 }

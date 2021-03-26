@@ -5,6 +5,6 @@ module.exports = {
   bracketSpacing: true,
   tabWidth: 2,
   useTabs: false,
-  arrowParens: 'avoid',
+  arrowParens: 'always',
   jsxBracketSameLine: true,
 }
