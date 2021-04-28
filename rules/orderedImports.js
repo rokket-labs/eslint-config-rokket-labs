@@ -13,7 +13,7 @@ module.exports = {
           ['^react', '^@?\\w'],
           // Internal packages.
           [
-            '^(@|@company|@ui|@src|components|lib|pages|layouts|tests|utils|config|vendored-lib|src)(/.*|$)',
+            '^(@|@company|@ui|@src|components|screens|lib|pages|layouts|tests|utils|config|vendored-lib|src)(/.*|$)',
           ],
           // Side effect imports.
           ['^\\u0000'],

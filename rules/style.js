@@ -19,8 +19,8 @@ module.exports = {
     'spaced-comment': ['error', 'always'],
     'eol-last': ['error', 'always'], // Required by Git
     // The following improves readability
-    'max-lines': ['warn', 300],
-    'max-lines-per-function': ['warn', 50],
+    'max-lines': ['warn', 250],
+    'max-lines-per-function': ['warn', 100],
     'max-params': ['warn', 3], // Enforce destructuring
     'padding-line-between-statements': [
       'warn',
