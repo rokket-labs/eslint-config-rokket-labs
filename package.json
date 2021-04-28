@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rokket-labs",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Rokket Labs official ESLint rules for all JS/TS projects",
   "author": "Tomás Castro (tomas@rokketlabs.com)",
   "license": "MIT",
@@ -38,9 +38,9 @@
     "prettier-eslint": "^12.0.0"
   },
   "devDependencies": {
-    "eslint-config-rokket-labs": "^0.4.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "eslint-config-rokket-labs": "^0.4.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "eslintConfig": {
     "extends": "./index.js"
