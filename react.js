@@ -6,7 +6,7 @@ module.exports = {
   },
   settings: {
     react: {
-      version: '16',
+      version: '17',
     },
   },
   parserOptions: {
