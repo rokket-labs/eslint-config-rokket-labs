@@ -1,14 +1,7 @@
 module.exports = {
   rules: {
     'brace-style': ['error', '1tbs'],
-    'comma-dangle': ['error', 'only-multiline', { functions: 'never' }],
-    'comma-dangle': ['error', {
-      arrays: 'only-multiline',
-      objects: 'only-multiline',
-      imports: 'only-multiline',
-      exports: 'only-multiline',
-      functions: 'never'
-    }],
+    'comma-dangle': ['error', 'always-multiline'],
     indent: 'off',
     'no-lonely-if': 'error',
     'no-mixed-spaces-and-tabs': 'error',

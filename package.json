@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rokket-labs",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "description": "Rokket Labs official ESLint rules for all JS/TS projects",
   "author": "Tomás Castro (tomas@rokketlabs.com)",
   "license": "MIT",
@@ -38,7 +38,7 @@
     "prettier-eslint": "^13.0.0"
   },
   "devDependencies": {
-    "eslint-config-rokket-labs": "^0.4.7",
+    "eslint-config-rokket-labs": "^0.4.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
