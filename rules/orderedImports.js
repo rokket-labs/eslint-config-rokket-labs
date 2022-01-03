@@ -4,8 +4,8 @@ module.exports = {
       'error',
       {
         groups: [
-          // reflect-metadata should always be imported first
-          ['^reflect-metadata'],
+          // Side effect imports.
+          ['^\\u0000[^.]', '^\\u0000\\.'],
           // Node.js builtins. You could also generate this regex if you use a `.js` config.
           // For example: `^(${require('module').builtinModules.join('|')})(/|$)`
           [
@@ -17,8 +17,6 @@ module.exports = {
           [
             '^(@|@company|@ui|@src|components|screens|assets|contexts|lib|pages|layouts|tests|utils|config|vendored-lib|src)(/.*|$)',
           ],
-          // Side effect imports.
-          ['^\\u0000'],
           // Parent imports. Put `..` last.
           ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
           // Other relative imports. Put same-folder imports and `.` last.
