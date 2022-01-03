@@ -4,6 +4,8 @@ module.exports = {
       'error',
       {
         groups: [
+          // reflect-metadata should always be imported first
+          ['^reflect-metadata'],
           // Node.js builtins. You could also generate this regex if you use a `.js` config.
           // For example: `^(${require('module').builtinModules.join('|')})(/|$)`
           [
