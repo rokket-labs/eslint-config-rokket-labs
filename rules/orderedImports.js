@@ -15,7 +15,7 @@ module.exports = {
           ['^react', '^@?\\w'],
           // Internal packages.
           [
-            '^(@|@company|@ui|@src|components|screens|assets|contexts|lib|pages|layouts|tests|utils|config|vendored-lib|src)(/.*|$)',
+            '^(@|@company|@ui|@src|components|entities|functions|service|helpers|screens|assets|contexts|lib|pages|layouts|tests|utils|config|configs|vendored-lib|src)(/.*|$)',
           ],
           // Parent imports. Put `..` last.
           ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
